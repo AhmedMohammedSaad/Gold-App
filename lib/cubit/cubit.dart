@@ -21,7 +21,7 @@ class MainCubit extends Cubit<States> {
   }
 
   double? SelverD;
-  nt? Selver;
+  int? Selver;
   getSilverPrise() {
     DioHelper.getData('XAG/USD/').then((value) {
       SelverD = value.data['price_gram_21k'];
